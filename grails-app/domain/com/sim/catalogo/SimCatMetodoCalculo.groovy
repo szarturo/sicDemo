@@ -7,7 +7,7 @@ class SimCatMetodoCalculo {
 	String	descripcionMetodoCalculo
 
     static constraints = {
-		claveMetodoCalculo(size:5..15, unique: true, nullable: false, blank: false)
+		claveMetodoCalculo(size:2..5, unique: true, nullable: false, blank: false)
 		nombreMetodoCalculo(size:5..150, unique: true, nullable: false, blank: false)
 		descripcionMetodoCalculo(size:0..300)
     }
