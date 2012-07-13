@@ -23,6 +23,18 @@ class BootStrap {
 				nombreMetodoCalculo: 'PAGOS IGUALES DE CAPITAL MAS INTERES, CALCULO DE INTERES SOBRE EL SALDO INSOLUTO RI',
 				descripcionMetodoCalculo: 'RECALCULO DE INTERESES POR PAGOS ADELANTADOS, CONOCIDO COMO METODO FRANCES',
 				).save(failOnError: true)
+
+		new SimCatPeriodicidad(clavePeriodicidad:  'SEMANA',
+				nombrePeriodicidad: 'SEMANAL',
+				cantidadPagos: 1,
+				numeroDias: 360,
+				).save(failOnError: true)
+
+		new SimCatPeriodicidad(clavePeriodicidad:  'CATORCENA',
+				nombrePeriodicidad: 'CATORCENAL',
+				cantidadPagos: 12,
+				numeroDias: 30,
+				).save(failOnError: true)
 	}
 	def destroy = {
 	}
